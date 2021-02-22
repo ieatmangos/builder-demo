@@ -1,0 +1,8 @@
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.selectdiv select:focus {
+  outline: none !important;
+}

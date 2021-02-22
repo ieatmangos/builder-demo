@@ -1,0 +1,358 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* FADE */
+/* STAGGER */
+.fade-item, .stagger-item {
+  opacity: 0;
+  /* transition: all 1s ease-in; */
+  @apply transform;
+}
+.fade-up, .stagger-up{
+  @apply translate-y-5;
+}
+.fade-down, .stagger-down{
+  @apply -translate-y-5;
+}
+.fade-right, .stagger-right{
+  @apply translate-x-5;
+}
+.fade-left, .stagger-left{
+  @apply -translate-x-5;
+}
+
+.is-showing {
+
+  opacity: 1;
+  /* transform: translateY(0) translateX(0); */
+  /* transition: all .7s ease-out; */
+  @apply translate-y-0 translate-x-0;
+}
+
+
+/*********************************
+        GLOBAL TRANSITION
+**********************************/
+
+.hds-transition {
+  @apply transition ease-out duration-300;
+}
+
+
+
+
+
+/*********************************
+        Global Text Color
+**********************************/
+
+.hds-text-color {
+  color: #4c5567;
+}
+
+.hds-title-color {
+  color: #333333;
+}
+
+
+
+
+
+
+/*********************************
+      Global Section Spacing
+**********************************/
+
+.hds-container { 
+  @apply w-full relative;
+}
+
+/* .hds-section-layout {
+  @apply max-w-6xl mx-auto relative overflow-hidden;
+} */
+.hds-section {
+  @apply max-w-6xl mx-auto relative overflow-hidden p-sm;
+}
+@screen md {
+  .hds-section {
+    @apply p-md;
+  }
+}
+@screen xl {
+  .hds-section {
+    @apply px-xs;
+  }
+}
+
+
+
+
+/*********************************
+    Global Typography Sizing
+**********************************/
+
+
+.hds-title__large {
+  @apply text-4xl;
+}
+@screen md {
+  .hds-title__large {
+    @apply text-5xl;
+  }
+}
+
+
+.hds-title__medium {
+  @apply text-3xl leading-10;
+}
+@screen md {
+  .hds-title__medium {
+    @apply text-4xl;
+  }
+}
+
+
+.hds-title__small {
+  @apply text-2xl leading-8;
+}
+@screen md {
+  .hds-title__small {
+    @apply text-2xl;
+  }
+}
+
+
+.hds-copy {
+  @apply text-base leading-8;
+}
+@screen md {
+  .hds-copy {
+    @apply text-xl;
+  }
+}
+
+
+.hds-legal {
+  @apply text-xs leading-6;
+}
+@screen md {
+  .hds-legal {
+    @apply text-sm;
+  }
+}
+
+
+
+
+
+/*********************************
+    Global Form Elements
+**********************************/
+
+.hds-form-input {
+  @apply bg-white border px-6 py-4;
+}
+
+
+
+
+
+/*********************************
+      Button Styles
+**********************************/
+
+
+.hds-btn {
+  @apply py-xs px-md text-base font-medium hds-transition;
+}
+
+.hds-btn__small {
+  @apply py-xs px-sm text-base font-medium hds-transition;
+}
+
+
+.hds-btn__primary {
+  @apply bg-primary text-white;
+}
+.hds-btn__primary:hover {
+  @apply bg-primary-dark;
+}
+
+
+.hds-btn__primary-hollow {
+  @apply bg-transparent border border-primary text-primary;
+}
+.hds-btn__primary-hollow:hover {
+  @apply bg-primary text-white border border-transparent;
+}
+
+.hds-btn__secondary {
+  @apply bg-secondary text-white;
+}
+.hds-btn__secondary:hover {
+  @apply bg-secondary-dark;
+}
+
+.hds-btn__secondary-hollow {
+  @apply bg-transparent border border-secondary text-secondary;
+}
+.hds-btn__secondary-hollow:hover {
+  @apply bg-secondary text-white border border-transparent;
+}
+
+.hds-btn__light {
+  @apply border border-transparent bg-white text-black;
+}
+.hds-btn__light:hover {
+  @apply border border-white bg-transparent text-white;
+}
+
+.hds-btn__light-hollow {
+  @apply border border-white bg-transparent text-white;
+}
+.hds-btn__light-hollow:hover {
+  @apply  border border-transparent bg-white text-black;
+}
+
+
+
+
+
+/*********************************
+      Navigation Menu Styles
+**********************************/
+
+
+.hds-navbar__bg-color {
+  @apply bg-white;
+}
+.hds-navbar__text-color {
+  @apply hds-text-color;
+}
+
+
+.hds-navbar__dropdown-bg-color {
+  @apply bg-white;
+}
+.hds-navbar__dropdown-text-color {
+  @apply hds-text-color;
+}
+
+
+.hds-navbar__megamenu-text-color {
+  @apply hds-text-color;
+}
+.hds-navbar__megamenu-bg-color {
+  @apply bg-gray-200;
+}
+
+
+
+
+
+/*********************************
+      Cart Styles
+**********************************/
+.hds-cart__top-bg-color {
+  @apply bg-green-200;
+}
+.hds-cart__top-text-color {
+  @apply text-green-700;
+}
+/* if btn styles are blank it will default to hds-btn__primary */
+.hds-cart__btn-bg-color {
+  @apply bg-green-200;
+}
+.hds-cart__btn-text-color {
+  @apply text-green-700;
+}
+
+.padding-nuke {
+  @apply p-0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hacks for the full page view.. please ignore lol */
+.full div.zoom {
+  zoom: 1;
+}
+
+.full .p-4 {
+  padding: 0 !important;
+}
+
+.full .trellis-shadow {
+  box-shadow: none;
+}
+
+/* The below styles are for the Mega Menu.  */
+/* Menu Hover for Desktop */
+@media only screen and (min-width: 768px) {
+  nav > ul > li.has-children:hover > ul {
+    display: block;
+  }
+}
+
+/* Position elements off screen for transition (add to config) */
+@media (min-width: 640px) {
+  .sm\:translate-x-192 {
+    --transform-translate-x: 48rem;
+  }
+}
+/* This is only needed until the above style is added to the config */
+@media (min-width: 768px) {
+  .md\:translate-x-0 {
+    --transform-translate-x: 0;
+  }
+}
+
+
+
+
+
+/*********************************
+        Starting Block Specifics
+**********************************/
+
+.remove-outline:focus{
+  outline: none !important;
+}
+
+.find {
+  outline: 1px solid darkcyan;
+}
+.find-border{
+  @apply border border-sb-teal;
+}
+/* .find::after{
+  content: '';
+  position: absolute;
+  width:calc(100% + 12px);
+  height: calc(100% + 12px);
+  top: -6px;
+  left: -6px;
+  @apply border border-sb-teal;
+} */
+.font-sbHeading {
+  @apply tracking-widest;
+}
+

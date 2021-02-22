@@ -1,0 +1,16 @@
+.animation-link {
+  /* animation: link duration timing-function delay iteration-count direction fill-mode; */
+  animation: links 0.32s ease forwards;
+  border: red;
+  
+}
+@keyframes links {
+  from {
+    opacity: 0;
+    transform:  translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform:  translateY(0px);
+  }
+}

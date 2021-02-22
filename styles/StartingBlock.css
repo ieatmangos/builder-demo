@@ -1,0 +1,259 @@
+
+*::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+  .dragging {
+    overflow: hidden;
+    list-style: none;
+  }
+  .dragging > div,
+  .dragging > section {
+    zoom: 0.3;
+  }
+  
+  .zoom {
+    zoom: 0.5;
+    margin: 0 auto;
+  }
+  .zoom-2 {
+    zoom: 0.4;
+  }
+  
+  .library-zoom{
+    zoom: 0.3;
+    margin: 0 auto;
+  }
+  
+  html{
+      scroll-behavior: smooth;
+  }
+  
+  .trellis-shadow {
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.25);
+  }
+  
+  button:focus {
+    outline: none !important;
+  } 
+  #file-button:focus {
+    outline: none;
+  }
+  
+  a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+    cursor: pointer;
+  }
+  
+  em { 
+    font-style: italic;
+    font-weight: normal !important;
+  }
+  
+  
+  
+  
+  
+  /* OLD FADE, now its in styles/tailwind.css */
+  /* .fade-item, .stagger-item {
+    opacity: 0;
+    transition: all 1s ease-in;
+  }
+  .fade-up, .stagger-up{
+    transform: translateY(20px);
+  }
+  .fade-down, .stagger-down{
+    transform: translateY(-20px);
+  }
+  .fade-right, .stagger-right{
+    transform: translateX(20px);
+  }
+  .fade-left, .stagger-left{
+    transform: translateX(-20px);
+  }
+  
+  .is-showing {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+    transition: all .7s ease-out;
+  } */
+  
+  
+  
+  
+  
+  
+  
+  
+  .animation-dropdown {
+    animation: parentSlide 0.7s  forwards;
+   
+  }
+  .animation-dropdown-quick {
+    animation: parentSlide 0.2s ease forwards;
+    transform-origin: bottom center;
+  }
+  .animation-dropdown-left {
+    animation: left 0.32s ease forwards;
+    transform-origin: left top;
+  }
+  .animation-dropdown-delay-1{
+    animation: parentSlide 0.35s ease .15s forwards;
+    transform-origin: bottom center;
+    opacity: 0;
+  }
+  
+  .animation-dropdown-delay-2 {
+    animation: parentSlide 0.4s ease .3s forwards;
+    transform-origin: bottom center;
+    opacity: 0;
+  }
+  .animation-dropdown-delay-3 {
+    animation: parentSlide 3s ease .5s forwards;
+    transform-origin: top center;
+    opacity: 0;
+  }
+  .animation-dropdown-child {
+    animation: childSlide 0.1s  forwards;
+    transform-origin: bottom center;
+    opacity: 0;
+  }
+  
+  
+  @keyframes childSlide {
+    0% {
+      opacity: 0;
+      transform:  translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform:  translateY(0px);
+    }
+  }
+  
+  @keyframes parentSlide {
+    0% {
+      transform:  translateY(-5px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform:  translateY(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes left {
+    0% {
+      transform:  translateX(-10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform:  translateX(0px);
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  
+  /*  */
+  /* PROGRESS SPINNER */
+  .sk-chase {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    animation: sk-chase 2.5s infinite linear both;
+  }
+  
+  .sk-chase-dot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; 
+    animation: sk-chase-dot 2.0s infinite ease-in-out both; 
+  }
+  
+  .sk-chase-dot:before {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 25%;
+    background-color: #595B69;
+    border-radius: 100%;
+    animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
+  }
+  
+  .sk-chase-dot:nth-child(1) { animation-delay: -1.1s; }
+  .sk-chase-dot:nth-child(2) { animation-delay: -1.0s; }
+  .sk-chase-dot:nth-child(3) { animation-delay: -0.9s; }
+  .sk-chase-dot:nth-child(4) { animation-delay: -0.8s; }
+  .sk-chase-dot:nth-child(5) { animation-delay: -0.7s; }
+  .sk-chase-dot:nth-child(6) { animation-delay: -0.6s; }
+  .sk-chase-dot:nth-child(1):before { animation-delay: -1.1s; }
+  .sk-chase-dot:nth-child(2):before { animation-delay: -1.0s; }
+  .sk-chase-dot:nth-child(3):before { animation-delay: -0.9s; }
+  .sk-chase-dot:nth-child(4):before { animation-delay: -0.8s; }
+  .sk-chase-dot:nth-child(5):before { animation-delay: -0.7s; }
+  .sk-chase-dot:nth-child(6):before { animation-delay: -0.6s; }
+  
+  @keyframes sk-chase {
+    100% { transform: rotate(360deg); } 
+  }
+  
+  @keyframes sk-chase-dot {
+    80%, 100% { transform: rotate(360deg); } 
+  }
+  
+  @keyframes sk-chase-dot-before {
+    50% {
+      transform: scale(0.4); 
+    } 100%, 0% {
+      transform: scale(1.0); 
+    } 
+  }
+  /*  */
+  
+  /*  */
+  /* AUTO GROW TEXT AREAS */
+  .grow-wrap {
+    /* easy way to plop the elements on top of each other and have them both sized based on the tallest one's height */
+    display: grid;
+    
+  }
+  .grow-wrap::after {
+    /* Note the weird space! Needed to preventy jumpy behavior */
+    content: attr(data-replicated-value) " ";
+   
+    /* This is how textarea text behaves */
+    white-space: pre-wrap;
+    
+    /* Hidden from view, clicks, and screen readers */
+    visibility: hidden;
+  }
+  .grow-wrap > textarea {
+    /* You could leave this, but after a user resizes, then it ruins the auto sizing */
+    resize: none;
+  
+    /* Firefox shows scrollbar on growth, you can hide like this. */
+    overflow: hidden;
+  }
+  .grow-wrap > textarea,
+  .grow-wrap::after {
+    /* Identical styling required!! */
+   
+    padding: 0.5rem;
+    font: inherit;
+  
+    /* Place on top of each other */
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  
+  
+  
+  
+  .focusColor *:focus { 
+  outline-color: #00818A
+  }
+  
+  /*  */

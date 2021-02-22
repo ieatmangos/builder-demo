@@ -1,0 +1,54 @@
+.animation-dropdown {
+  animation: parentSlide 0.32s ease forwards;
+  transform-origin: bottom center;
+  
+}
+.animation-dropdown-child {
+  animation: childSlide 0.3s ease forwards;
+  transform-origin: top center;
+
+}
+
+
+@keyframes childSlide {
+  0% {
+    opacity: 0;
+    transform:  translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform:  translateY(0px);
+  }
+}
+
+@keyframes parentSlide {
+  0% {
+    transform:  translateY(-15px);
+    opacity: 0;
+  }
+
+  100% {
+    transform:  translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+
+/* @keyframes growOut {
+  0% {
+    transform: translateY(-10px) scale(0.98);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px) ;
+    opacity: 1;
+  }
+} */
+
+
+
+.focusColor *:focus { 
+outline-color: #00818A
+}

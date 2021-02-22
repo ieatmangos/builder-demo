@@ -1,0 +1,8 @@
+.animation-float {
+  animation: float 1s ease alternate infinite;
+}
+@keyframes float {
+  0%{ transform: translateY(24px)}
+  
+  100%{ transform: translateY(8px)}
+}

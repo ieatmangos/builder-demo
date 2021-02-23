@@ -40,7 +40,7 @@ const defaults = {
     data: {
       card_layout: {
         label: "Card Layout",
-        value: "grid sm:grid-cols-3 sm:gap-sm lg:gap-lg",
+        value: "grid sm:grid-cols-3 sm:gap-sm lg:gap-xl",
       },
       shared_card_container: {
         label: "Shared Card Container",
@@ -60,7 +60,7 @@ const defaults = {
       },
       shared_styles: {
         label: "Shared Image Styles",
-        value: "object-cover object-center w-full h-full transition ease-out duration-300 transform scale-100 hover:scale-105"
+        value: "object-cover object-top w-full h-full transition ease-out duration-300 transform scale-100 hover:scale-105"
       },
     }
   },
@@ -80,7 +80,7 @@ const defaults = {
       },
       image_1: {
         label: "Image",
-        value: "/images/products/product-image-7.jpeg",
+        value: "/images/demo/dark.png",
         image: true
       },
       f1_large_text: {
@@ -111,7 +111,7 @@ const defaults = {
       },
       image_2: {
         label: "Image",
-        value: "/images/products/product-image-7.jpeg",
+        value: "/images/demo/dark.png",
         image: true
       },
       f2_large_text: {
@@ -142,7 +142,7 @@ const defaults = {
       },
       image_3: {
         label: "Image",
-        value: "/images/products/product-image-7.jpeg",
+        value: "/images/demo/dark.png",
         image: true
       },
       f3_large_text: {

@@ -15,7 +15,6 @@ import GalleryV5 from "./GalleryV5";
 import GalleryV6 from "./GalleryV6";
 import Text from "./Text";
 import TextV1 from "./TextV1";
-import ProductDetailV4 from "./ProductDetailV4";
 import FeaturesV2 from "./FeaturesV2";
 import FeaturesV4 from "./FeaturesV4";
 import FeaturesV10 from "./FeaturesV10";
@@ -100,7 +99,7 @@ const data = [
   // {  c: ProductDetailV1, label: "ProductDetailV1", ...getTag('Product')},
   // {  c: ProductDetailV2, label: "ProductDetailV2", ...getTag('Product')},
   // {  c: ProductDetailV3, label: "ProductDetailV3", ...getTag('Product')},
-  {  c: ProductDetailV4, label: "ProductDetailV4", ...getTag('Product')},
+  // {  c: ProductDetailV4, label: "ProductDetailV4", ...getTag('Product')},
   {  c: ProductDetail1, label: "ProductDetail1", ...getTag('Product')},
 
   // Forms

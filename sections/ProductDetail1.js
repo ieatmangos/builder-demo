@@ -40,7 +40,7 @@ const defaults = {
       shared_styles: {
         label: "Shared Image Styles",
         value:
-          "object-cover object-center w-full h-full transition ease-out duration-300 transform scale-100 hover:scale-105"
+          "object-cover object-top w-full h-full transition ease-out duration-300 transform scale-100 hover:scale-105"
       }
     }
   },
@@ -64,8 +64,8 @@ const defaults = {
         value: ""
       },
       src: {
-        label: "Image Path",
-        value: "/images/products/product-image.jpeg",
+        label: "Image",
+        value: "/images/demo/dark.png",
         image: true
       }
     }
@@ -118,22 +118,22 @@ const defaults = {
       },
       thumbnail_1: {
         label: "Image 1",
-        value: "/images/products/product-image.jpeg",
+        value: "/images/demo/dark.png",
         image: true
       },
       thumbnail_2: {
         label: "Image 2",
-        value: "/images/products/product-image.jpeg",
+        value: "/images/demo/dark.png",
         image: true
       },
       thumbnail_3: {
         label: "Image 3",
-        value: "/images/products/product-image.jpeg",
+        value: "/images/demo/dark.png",
         image: true
       },
       thumbnail_4: {
         label: "Image 4",
-        value: "/images/products/product-image.jpeg",
+        value: "/images/demo/dark.png",
         image: true
       }
     }
@@ -332,23 +332,23 @@ const defaults = {
       },
       option_1: {
         label: "Option 1",
-        value: "bg-blue-200"
+        value: "bg-gray-200"
       },
       option_2: {
         label: "Option 2",
-        value: "bg-blue-300"
+        value: "bg-gray-300"
       },
       option_3: {
         label: "Option 3",
-        value: "bg-blue-400"
+        value: "bg-gray-400"
       },
       option_4: {
         label: "Option 4",
-        value: "bg-blue-500"
+        value: "bg-gray-500"
       },
       option_5: {
         label: "Option 5",
-        value: "bg-blue-600"
+        value: "bg-gray-600"
       }
     }
   },

@@ -7,7 +7,7 @@ const defaults = {
     data: {
       container: {
         label: "Container Styles",
-        value: "Hero hds-container bg-primary hds-text-color"
+        value: "Hero hds-container bg-primary text-white"
       },
       section: {
         label: "Section Styles",
@@ -23,7 +23,7 @@ const defaults = {
       },
       title_style: {
         label: "Title Style",
-        value: "hds-title__large hds-title-color mb-xs font-black"
+        value: "hds-title__large  mb-xs font-black"
       },
       title: {
         label: "Title",
@@ -62,11 +62,11 @@ const defaults = {
       },
       image_style: {
         label: "Style",
-        value: "w-full h-full object-cover object-center"
+        value: "w-full h-full object-cover object-top"
       },
       image_src: {
         label: "Image",
-        value: "/images/products/product-image.jpeg",
+        value: "/images/demo/light.png",
         image: true
       }
     }

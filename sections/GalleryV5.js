@@ -39,7 +39,7 @@ const defaults = {
       shared_styles: {
         label: "Shared Image Styles",
         value:
-          "object-cover object-center w-full h-full transition ease-out duration-300 transform hover:scale-105"
+          "object-cover object-top w-full h-full transition ease-out duration-300 transform hover:scale-105"
       },
       image_1_container: {
         label: "Image 1 Container",
@@ -51,7 +51,7 @@ const defaults = {
       },
       image_1: {
         label: "Image 1",
-        value: "/images/products/product-image-3.jpeg",
+        value: "/images/demo/dark.png",
         image: true
       },
       image_2_container: {
@@ -64,7 +64,7 @@ const defaults = {
       },
       image_2: {
         label: "Image 2",
-        value: "/images/products/product-image-4.jpeg",
+        value: "/images/demo/dark.png",
         image: true
       }
     }

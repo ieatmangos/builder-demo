@@ -37,8 +37,8 @@ const CartV1 = () => {
                   <div className="w-24 h-24 mr-sm">
                     <div className="relative h-full bg-primary rounded-md overflow-hidden">
                       <img
-                        className="top-0 w-full h-full min-h-1/2 object-cover absolute z-0"
-                        src="/images/products/product-image-2.jpeg"
+                        className="top-0 w-full h-full min-h-1/2 object-cover object-top absolute z-0"
+                        src="/images/demo/dark.png"
                         alt=""
                       />
                     </div>
@@ -88,8 +88,8 @@ const CartV1 = () => {
                   <div className="w-24 h-24 mr-sm">
                     <div className="relative h-full bg-primary rounded-md overflow-hidden">
                       <img
-                        className="top-0 w-full h-full min-h-1/2 object-cover absolute z-0"
-                        src="/images/products/product-image-2.jpeg"
+                        className="top-0 w-full h-full min-h-1/2 object-cover object-top absolute z-0"
+                        src="/images/demo/dark.png"
                         alt=""
                       />
                     </div>
@@ -139,8 +139,8 @@ const CartV1 = () => {
                   <div className="w-24 h-24 mr-sm">
                     <div className="relative h-full bg-primary rounded-md overflow-hidden">
                       <img
-                        className="top-0 w-full h-full min-h-1/2 object-cover absolute z-0"
-                        src="/images/products/product-image-2.jpeg"
+                        className="top-0 w-full h-full min-h-1/2 object-cover object-top absolute z-0"
+                        src="/images/demo/dark.png"
                         alt=""
                       />
                     </div>

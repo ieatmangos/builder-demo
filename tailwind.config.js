@@ -45,27 +45,25 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          lighter: "#363B45", // 06A7E2
-          DEFAULT: "#bbd5d8", //ecc94b
-          dark: "#080D15",
+          lighter: "#333333", // 06A7E2
+          DEFAULT: "#333333", //ecc94b
+          dark: "#333333",
         },
         secondary: {
-          lighter: "#EBD480",
-          DEFAULT: "#ecc94b", //1a202c
-          dark: "#D0AD2E",
+          lighter: "#333333",
+          DEFAULT: "#333333", //1a202c
+          dark: "#333333",
         },
         tertiary: {
           lighter: "#7BC9E4",
           DEFAULT: "#00A7E0", //1a202c
           dark: "#1388B0",
         },
-
         dark: {
           lighter: "#363B45", // 06A7E2
           DEFAULT: "#1a202c", //ecc94b
           dark: "#080D15",
         },
-
         highlight: {
           lighter: "#f6e05e",
           DEFAULT: "#ecc94b", //1a202c
@@ -96,14 +94,23 @@ module.exports = {
         "3/4": "75%",
         "1/2": "50%",
       },
+      fontFamily: {
+        // Dont forget to add google fonts link into public/index.html
+        sans: ["Roboto", "system-ui"],
+        lato: ["Lato", "system-ui"],
+
+        // SB Specific: Dont Change
+        sbHeading: ["Oswald", "system-ui"],
+        sbBody: ["Roboto", "system-ui"],
+      },
     },
   },
   variants: {
     extend: {
-      opacity: ['group-hover', 'hover', 'active'],
-      backgroundColor: ['group-hover', 'active', ],
-      borderColor: ['group-focus'],
-      textColor: ['active']
+      opacity: ["group-hover", "hover", "active"],
+      backgroundColor: ["group-hover", "active"],
+      borderColor: ["group-focus"],
+      textColor: ["active"],
     },
   },
   plugins: [],

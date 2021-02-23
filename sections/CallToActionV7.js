@@ -27,7 +27,7 @@ const defaults = {
     data: {
       layout: {
         label: "Layout",
-        value: "w-full grid grid-cols-1 gap-lg sm:grid-cols-2"
+        value: "w-full grid grid-cols-1 gap-lg sm:grid-cols-2 max-w-xl mx-auto"
       }
     }
   },
@@ -35,12 +35,11 @@ const defaults = {
     data: {
       container: {
         label: "Container",
-        value: "flex flex-col items-start"
+        value: "flex flex-col items-start sm:items-end text-white"
       },
-
       title_style: {
         label: "Title Style",
-        value: "hds-title__medium hds-title-color mb-xs md:mb-sm font-black "
+        value: "hds-title__medium mb-xs md:mb-sm font-black "
       },
       title: {
         label: "Title",
@@ -49,7 +48,7 @@ const defaults = {
       },
       body_style: {
         label: "Body Style",
-        value: "hds-copy mb-sm md:mb-md flex-1"
+        value: "hds-copy mb-sm md:mb-md flex-1 sm:text-right"
       },
       body: {
         label: "Body",

@@ -27,7 +27,7 @@ const defaults = {
     data: {
       images_layout:{
         label: 'Images Layout',
-        value: 'grid grid-cols-2 col-gap-sm'
+        value: 'grid grid-cols-2 gap-x-sm'
       },
       shared_container:{
         label: 'Shared Container',
@@ -47,7 +47,7 @@ const defaults = {
       },
       image_1: {
         label: "Image 1",
-        value: "/images/products/product-image-7.jpeg",
+        value: "/images/demo/dark.png",
         image: true
       },
       image_2_container:{
@@ -60,7 +60,7 @@ const defaults = {
       },
       image_2: {
         label: "Image 2",
-        value: "/images/products/product-image-3.jpeg",
+        value: "/images/demo/dark.png",
         image: true
       },
       image_3_container:{
@@ -73,7 +73,7 @@ const defaults = {
       },
       image_3: {
         label: "Image 3",
-        value: "/images/products/product-image-5.jpeg",
+        value: "/images/demo/dark.png",
         image: true
       },
       image_4_container:{
@@ -86,7 +86,7 @@ const defaults = {
       },
       image_4: {
         label: "Image 4",
-        value: "/images/products/product-image-3.jpeg",
+        value: "/images/demo/dark.png",
         image: true
       },
     }
@@ -95,7 +95,7 @@ const defaults = {
     data: {
       container: {
         label: "Container",
-        value: ""
+        value: "flex flex-col justify-center max-w-lg"
       },
       title_style: {
         label: "Title Style",

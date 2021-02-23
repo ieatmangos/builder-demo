@@ -122,7 +122,7 @@ const defaults = {
       },
       image_src: {
         label: "Image Source",
-        value: "/images/products/product-image-2.jpeg",
+        value: "/images/demo/dark.png",
         image: true,
       },
       title: {
@@ -165,7 +165,7 @@ const defaults = {
       },
       image_src: {
         label: "Image Source",
-        value: "/images/products/product-image-2.jpeg",
+        value: "/images/demo/dark.png",
         image: true,
       },
       title: {
@@ -209,7 +209,7 @@ const defaults = {
       },
       image_src: {
         label: "Image Source",
-        value: "/images/products/product-image-2.jpeg",
+        value: "/images/demo/dark.png",
         image: true,
       },
       title: {
@@ -253,7 +253,7 @@ const defaults = {
       },
       image_src: {
         label: "Image Source",
-        value: "/images/products/product-image-2.jpeg",
+        value: "/images/demo/dark.png",
         image: true,
       },
       title: {

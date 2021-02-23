@@ -6,7 +6,7 @@ const defaults = {
     data: {
       container: {
         label: "Container Styles",
-        value: "Hero hds-container bg-primary hds-text-color"
+        value: "Hero hds-container bg-primary text-white"
       },
       section: {
         label: "Section Styles",
@@ -30,7 +30,7 @@ const defaults = {
       },
       large_text_style: {
         label: "Large Text Style",
-        value: "hds-title__large hds-title-color mb-sm font-black"
+        value: "hds-title__large  mb-sm font-black"
       },
       large_text: {
         label: "Large Text",
@@ -94,7 +94,7 @@ const defaults = {
       },
       image_1_src: {
         label: "Image 1 Source",
-        value: "/images/products/product-image.jpeg",
+        value: "/images/demo/light.png",
         image: true
       },
       image_2_container: {
@@ -108,7 +108,7 @@ const defaults = {
       },
       image_2_src: {
         label: "Image 2 Source",
-        value: "/images/products/product-image.jpeg",
+        value: "/images/demo/light.png",
         image: true
       },
       image_3_container: {
@@ -122,7 +122,7 @@ const defaults = {
       },
       image_3_src: {
         label: "Image 3 Source",
-        value: "/images/products/product-image.jpeg",
+        value: "/images/demo/light.png",
         image: true
       }
     }

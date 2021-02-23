@@ -82,11 +82,11 @@ const defaults = {
       },
       image_style: {
         label: "Image Style",
-        value: "object-cover object-center w-full h-full transition ease-out duration-300 transform scale-100 hover:scale-105"
+        value: "object-cover object-top w-full h-full transition ease-out duration-300 transform scale-100 hover:scale-105"
       },
       image: {
         label: "Image",
-        value: "/images/products/product-image.jpeg",
+        value: "/images/demo/dark.png",
         image: true
       }
     }

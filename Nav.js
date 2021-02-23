@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { sbLogoWhite } from "./assets";
 // import "./App.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
 const LinkElement = ({ href, icon, displayName, selected, setSelected }) => {
+
   return (
     <Link className="" href={`/${href}`} key={href}>
       <li
@@ -34,6 +35,17 @@ const Nav = () => {
   const [selected, setSelected] = useState("");
 
   const path = _path.length < 1 ? "home" : _path;
+  useEffect(() => {
+    let mounted = true
+    if(mounted){
+   
+      setSelected(path[1])
+      console.log('Go')
+      console.log(path)
+    }
+    mounted = false
+  }, [path])
+
   if (path.includes("full") || path.includes("iframe")) {
     return null;
   }

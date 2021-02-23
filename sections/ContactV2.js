@@ -7,7 +7,7 @@ const defaults = {
     data: {
       container: {
         label: "Container Styles",
-        value: "Contact hds-container bg-white hds-text-color"
+        value: "Contact hds-container bg-white "
       },
       section: {
         label: "Section Styles",
@@ -40,7 +40,7 @@ const defaults = {
       },
       small_text_style: {
         label: "Small Text Style",
-        value: "hds-copy mb-sm sm:mb-md"
+        value: "hds-copy mb-sm sm:mb-md hds-text-color"
       },
       small_text: {
         label: "Small Text",
@@ -62,11 +62,11 @@ const defaults = {
       },
       shared_large_text_style: {
         label: "Shared Large Text Style",
-        value: "mb-xs font-bold"
+        value: "mb-xs font-bold text-white"
       },
       shared_small_text_style: {
         label: "Shared Small Text Style",
-        value: "hds-copy mb-sm flex-1"
+        value: "hds-copy mb-sm flex-1 text-white"
       },
       shared_icon_style: {
         label: "Icon Style",

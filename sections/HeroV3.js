@@ -7,7 +7,7 @@ const defaults = {
     data: {
       container: {
         label: "Container Styles",
-        value: "Hero hds-container bg-primary hds-text-color"
+        value: "Hero hds-container bg-primary text-white"
       },
       section: {
         label: "Section Styles",
@@ -28,7 +28,7 @@ const defaults = {
       },
       image: {
         label: "Image",
-        value: "/images/products/product-image.jpeg",
+        value: "/images/demo/light.png",
         image: true
       }
     }
@@ -50,7 +50,7 @@ const defaults = {
       },
       large_text_style: {
         label: "Large Text Style",
-        value: "hds-title__large hds-title-color mb-sm font-black "
+        value: "hds-title__large text-white mb-sm font-black "
       },
       large_text: {
         label: "Large Text",

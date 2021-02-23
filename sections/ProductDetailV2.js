@@ -15,6 +15,22 @@ const defaults = {
       }
     }
   },
+  layout: {
+    data: {
+      layout: {
+        label: "Layout Grid",
+        value: "grid grid-cols-1 md:grid-cols-10 md:gap-12 "
+      },
+      left: {
+        label: "Left Side",
+        value: "col-span-6 mb-sm md:mb-0"
+      },
+      right: {
+        label: "Right Side",
+        value: "col-span-4"
+      }
+    }
+  },
   main_image: {
     data: {
       container_style: {
@@ -22,19 +38,19 @@ const defaults = {
         value:
           "relative flex justify-between items-center mb-xs md:mb-sm w-full pb-3/4 bg-primary rounded-md overflow-hidden"
       },
+      image_style: {
+        label: "Image Style",
+        value: "h-full top-0 w-full h-full min-h-2/3 object-cover object-top absolute z-0"
+      },
       src: {
         label: "Image Path",
-        value: "/images/products/product-image.jpeg",
+        value: "/images/demo/dark.png",
         image: true,
       },
       alt: {
         label: "Alt Tag",
         value: ""
       },
-      image_style: {
-        label: "Image Style",
-        value: "h-full top-0 w-full h-full min-h-2/3 object-cover absolute z-0"
-      }
     }
   },
   slider_buttons: {
@@ -130,6 +146,10 @@ const defaults = {
   },
   thumbnail_images: {
     data: {
+      layout: {
+        label: 'Layout',
+        value: 'flex'
+      },
       image_container_style: {
         label: "Image Container Style",
         value:
@@ -141,34 +161,18 @@ const defaults = {
       },
       image_src_1: {
         label: "Image Path 1",
-        value: "/images/products/product-image.jpeg",
+        value: "/images/demo/dark.png",
         image: true,
       },
       image_src_2: {
         label: "Image Path 2",
-        value: "/images/products/product-image.jpeg",
+        value: "/images/demo/dark.png",
         image: true,
       },
       image_src_3: {
         label: "Image Path 3",
-        value: "/images/products/product-image.jpeg",
+        value: "/images/demo/dark.png",
         image: true,
-      }
-    }
-  },
-  layout: {
-    data: {
-      layout: {
-        label: "Layout Grid",
-        value: "grid grid-cols-1 md:grid-cols-10 md:gap-12 "
-      },
-      left: {
-        label: "Left Side",
-        value: "col-span-6 mb-sm md:mb-0"
-      },
-      right: {
-        label: "Right Side",
-        value: "col-span-4"
       }
     }
   },
@@ -284,7 +288,7 @@ const ProductDetailV2 = ({ id }) => {
                   />
                 </button>
               </div>
-              <div className="flex ">
+              <div className={_.thumbnail_images.data.layout.value}>
                 <div
                   className={
                     _.thumbnail_images.data.image_container_style.value

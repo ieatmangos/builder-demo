@@ -10,8 +10,8 @@ const MenuV1 = ({id}) => {
         <div className='max-w-screen-xl mx-auto'>
           <div className='flex justify-between items-center '>
             {/* <!-- Logo --> */}
-            <div className='w-24'>
-              <img src='/images/products/product-image.jpeg' alt="logo" />
+            <div className='w-24 h-24 object-cover'>
+              <img src='/images/demo/dark.png' alt="logo" />
             </div>
 
             {/* <!-- Nav/Search/Icons Wrapper --> */}

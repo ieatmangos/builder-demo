@@ -37,7 +37,7 @@ const defaults = {
       },
       image_1: {
         label: "Image 1",
-        value: "/images/products/product-image.jpeg",
+        value: "/images/demo/dark.png",
         image: true
       }
     }
@@ -46,7 +46,7 @@ const defaults = {
     data: {
       container: {
         label: "Container",
-        value: ""
+        value: "flex flex-col justify-center"
       },
       pretitle_style: {
         label: "Pretitle Style",

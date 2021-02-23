@@ -46,7 +46,13 @@ export default function Rte({ value, onChange }) {
   };
 
   useEffect(() => {
-    setEditorState(fromHtml(value));
+    let mounted = true
+    
+    if(mounted){
+      console.log('effect')
+      setEditorState(fromHtml(value));
+    }
+    mounted = false
   }, [value]);
 
   const editorChange = (arg) => {
@@ -59,7 +65,7 @@ export default function Rte({ value, onChange }) {
     const result = RichUtils.toggleInlineStyle(editorState, inlineStyle);
     const html = stateToHTML(result.getCurrentContent(), options);
     onChange(html);
-    setEditorState(fromHtml(html));
+    setEditorState(result);
   };
 
   return (

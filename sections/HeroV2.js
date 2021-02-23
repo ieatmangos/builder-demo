@@ -7,7 +7,7 @@ const defaults = {
     data: {
       container: {
         label: "Container Styles",
-        value: "Hero hds-container bg-primary hds-text-color"
+        value: "Hero hds-container bg-primary text-white"
       },
       section: {
         label: "Section Styles",
@@ -40,7 +40,7 @@ const defaults = {
       },
       image: {
         label: "Image",
-        value: "/images/products/product-image.jpeg",
+        value: "/images/demo/light-square.png",
         image: true
       },
       icons_container: {
